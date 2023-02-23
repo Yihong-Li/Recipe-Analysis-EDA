@@ -69,33 +69,21 @@ This aggregated data frame shows the correlation between rating and both minutes
 The data we analyzed has four columns with non-trivial missing values: "description", "rating", "review", "avg_rating". Since "avg_rating" is derived from taking the mean of "rating" for each "recipe_id", we can say "avg_rating" column is missing by design. So we focued on identifying the missingness mechanism of "description", "rating", and "review". We argued that the "review" columns is likely to be "NMAR". After reasoning about the data generating process, we came up with two explanations: <br>
 1) People that rate recipes sometime are reluctant to write review because they are lazy and write review cost time. <br>
 2) People that don't write review maybe less educated or even illiterate. They don't know how to organizing their opinions into sentences. If we instead have access to the education level of all the reviewers, we might make the "review" column MAAR.
-|  column_name        |   missing_count   |
-|--------------------:|------:|
-| name                |     1 |
-| id                  |     0 |
-| minutes             |     0 |
-| contributor_id      |     0 |
-| submitted           |     0 |
-| tags                |     0 |
-| nutrition           |     0 |
-| n_steps             |     0 |
-| steps               |     0 |
-| description         |   113 |
-| ingredients         |     0 |
-| n_ingredients       |     0 |
-| user_id             |     1 |
-| recipe_id           |     1 |
-| date                |     1 |
-| rating              | 14807 |
-| review              |    56 |
-| avg_rating          |  2722 |
-| calories (#)        |     0 |
-| total fat (PDV)     |     0 |
-| sugar (PDV)         |     0 |
-| sodium (PDV)        |     0 |
-| protein (PDV)       |     0 |
-| saturated fat (PDV) |     0 |
-| carbohydrates (PDV) |     0 |
+
+|                |   missing_counts |
+|:---------------|-----------------:|
+| name           |                1 |
+| id             |                0 |
+| minutes        |                0 |
+| contributor_id |                0 |
+| submitted      |                0 |
+| tags           |                0 |
+| nutrition      |                0 |
+| n_steps        |                0 |
+| steps          |                0 |
+| description    |               70 |
+| ingredients    |                0 |
+| n_ingredients  |                0 |
 
 
 ## Missingness Dependency
