@@ -41,11 +41,10 @@ Here is our dataframe after processing, we only showed columns with numeric valu
 
 ## Univariate Analysis
 <iframe src="assets/uni-rating.html" width=800 height=600 frameBorder=0></iframe>
-This graph shows the distribution of the cleaned column of minutes (without outliers). The graph shows that the majority of recipes’ times are controlled under 120 minutes. Half of the recipes take less than 35 minutes.  This shows that a recipe with a time higher than 1000 minutes will definitely be counted as an impossible recipe.
-
-<iframe src="assets/uni-minutes.html" width=800 height=600 frameBorder=0></iframe>
 The graph is a histogram that shows the distribution of recipes’ ratings. The graphs represent a left skewed distribution, which means the ratings of recipes tend to be high ratings. Most recipes have a 5 rating.
 
+<iframe src="assets/uni-minutes.html" width=800 height=600 frameBorder=0></iframe>
+This graph shows the distribution of the cleaned column of minutes (without outliers). The graph shows that the majority of recipes’ times are controlled under 120 minutes. Half of the recipes take less than 35 minutes.  This shows that a recipe with a time higher than 1000 minutes will definitely be counted as an impossible recipe.
 
 ## Bivariate Analysis
 <iframe src="assets/bi-minutes-rating.html" width=800 height=600 frameBorder=0></iframe>
