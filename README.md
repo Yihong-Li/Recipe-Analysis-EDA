@@ -94,4 +94,7 @@ We also performed permutation tests to determine whether the missingness of "des
 
 
 # Hypothesis Testing
-We choose the test statistic as the absolute mean difference between the ratings regarding zero sugar level recipes and the ratings regarding recipes containing sugar. We choose the absolute difference because both ratings and sugar amount are numerical data and our alternate hypothesis doesn’t have a direction. We set the significance level to 0.05, as we only run  the test 1000 times. We performed the hypothesis test and acquired a p-value of 0.009. Therefore, we reject the null hypothesis and conclude that ratings of non-sugar recipes have a different distribution with ratings of recipes containing sugar.
+- Null Hypothesis: non sugar recipes and sugar recipes have the same average rating
+- Alternate Hypothesis: non sugar recipes and sugar recipes have different average rating
+
+We choose the test statistic as the absolute mean difference between the ratings regarding zero sugar level recipes and the ratings regarding recipes containing sugar. We choose the absolute difference in means as our test statistic because both ratings and sugar amount are numerical data and our alternate hypothesis doesn’t have a direction. We set the significance level to 0.05, as we only run  the test 1000 times. We performed the hypothesis test and acquired a p-value of 0.009. Therefore, we reject the null hypothesis and conclude that ratings of non-sugar recipes have a different distribution with ratings of recipes containing sugar.
